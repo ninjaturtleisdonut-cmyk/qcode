@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python Essentials</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      color: #222;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+    }
+
+    p {
+      margin: 6px 0;
+    }
+
+    ul {
+      margin: 6px 0 10px 20px;
+    }
+
+    pre {
+      background: #f6f6f6;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Variables & Data Types</h2>
+  <p>Variables store values.</p>
+  <p>Data types are self-explanatory</p>
+
+  <ul>
+    <li><strong>int</strong> – whole numbers</li>
+    <li><strong>float</strong> – decimals</li>
+    <li><strong>str</strong> – text</li>
+    <li><strong>bool</strong> – True / False</li>
+    <li><strong>None</strong> – no value</li>
+  </ul>
+
+  <pre><code>x = 10  # int</code></pre>
+
+  <h2>2. Lists</h2>
+  <p>Multiple ordered values.</p>
+
+  <pre><code>numbers = [1, 2, 3]</code></pre>
+
+  <h2>3. Dictionaries</h2>
+  <p>Key–value data. Data can be accessed from keys & vice-versa</p>
+
+  <pre><code>user = {"name": "Alex"}</code></pre>
+
+  <h2>4. Tuples</h2>
+  <p>Fixed ordered values. Cannot be changed.</p>
+
+  <pre><code>point = (10, 20)</code></pre>
+
+  <h2>5. Conditionals</h2>
+  <p>Boolean logic.</p>
+
+  <pre><code>if x > 5:
+    print("large")</code></pre>
+
+  <h2>6. Loops</h2>
+  <p>Repeated execution.</p>
+
+  <ul>
+    <li><code>for i in range(n)</code></li>
+    <li><code>for item in iterable</code></li>
+    <li><code>while condition</code></li>
+  </ul>
+
+  <pre><code>for i in range(5):
+    print(i)</code></pre>
+
+  <h2>7. Functions</h2>
+  <p>Reusable code blocks.</p>
+
+  <pre><code>def add(a, b):
+    return a + b<br>add(5,4) # returns 9</code></pre>
+
+  <h2>8. Built-in Functions</h2>
+  <p>You can use these in code</p>
+
+  <ul>
+    <li><code>print() #Display data</code></li>
+    <li><code>len() #Return length of data</code></li>
+    <li><code>type()</code></li>
+    <li><code>range()</code></li>
+  </ul>
+
+  <pre><code>length = len(numbers)</code></pre>
+
+  <h2>9. Error Handling</h2>
+  <p>Handle failure.</p>
+
+  <pre><code>try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("error")</code></pre>
+
+  <h2>10. Imports</h2>
+  <p>External modules.</p>
+
+  <pre><code>import math</code></pre>
+
+</body>
+</html>
