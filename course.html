@@ -74,8 +74,8 @@ number1[-1] # returns last value (3)</code></pre>
 user["name"] # access a value using its key
 user.keys() / user.values() # access all keys/values</code></pre>
 
-  <h2>4. Tuples</h2>
-  <p>Fixed ordered values. Cannot be changed.</p>
+  <h2>4.5 Tuples</h2>
+  <p>Fixed ordered values. Cannot be changed. Less common.</p>
 
   <pre><code>point = (10, 20)
 point[1] # access the second value</code></pre>
@@ -133,8 +133,24 @@ Prints: 0 1 2 3 4 (each on new line)</code></pre>
   <h2>7. Functions</h2>
   <p>Reusable code blocks.</p>
 
-  <pre><code>def add(a, b):
-    return a + b<br>add(5,4) # returns 9</code></pre>
+  <pre><code>def add(a, b):  # a & b are placeholders data is passed into - that the function can access
+    return a + b<br>add(5,4) # returns 9 - 5 & 4 are arguments (data) passed into the parameters</code></pre>
+
+  <h2>7.5 Objects / Classes</h2>
+<p>
+  Classes are templates used to create Objects
+  Objects store multiple values as named attributes.
+</p>
+
+<pre><code>
+class Teacher: # Creates class
+    def __init__(self, name, age): # You always need this - Assigns values to attributes
+        self.name = name
+        self.age = age
+
+teacher1 = Teacher("Josh", 20)
+teacher1.name / teacher1.age  # access object name / age
+</code></pre>
 
   <h2>8. Built-in Functions</h2>
   <p>You can use these in code</p>
