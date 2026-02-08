@@ -36,6 +36,13 @@
 </head>
 <body>
 
+  <h2>Quick Clarification</h2>
+  <p># is used to define comments in python
+    <br>This tells the computer what to ignore (e.g.)
+    <br><code>print("Hello") # prent(hello]])</code>
+    <br>This wont break the program - the 2nd part is ignored
+    <br>I use them here for <em>explanation</em> of code
+  
   <h2>1. Variables & Data Types</h2>
   <p>Variables store values.</p>
   <p>Data types are self-explanatory</p>
@@ -57,17 +64,22 @@
 
   <p>Data can be accessed using splicing.<br><em>Be careful: Indexing starts at 0</em></p>
 
-  <pre><code>number1[0] # returns 1</code></pre>
+  <pre><code>number1[0] # returns 1
+  number1[-1] # returns last value (3)</code></pre>
 
   <h2>3. Dictionaries</h2>
   <p>Key–value data. Data can be accessed from keys & vice-versa.</p>
 
-  <pre><code>user = {"name": "Alex"}</code></pre>
+  <pre><code>user = {"name": "Alex"}
+user["name"] # access a value using its key
+user.keys()/user.values() # access all keys/values
+  </code></pre>
 
   <h2>4. Tuples</h2>
   <p>Fixed ordered values. Cannot be changed.</p>
 
-  <pre><code>point = (10, 20)</code></pre>
+  <pre><code>point = (10, 20)
+point[1] # access the second value</code></pre>
 
   <h2>5. Conditionals</h2>
   <p>Self-Explanatory</p>
@@ -141,9 +153,9 @@ Prints: 0 1 2 3 4 (each on new line)</code></pre>
   <p>Handle failure.</p>
 
   <pre><code>try:
-    x = 10 / 0 # Attempts to execute "try" block
+    x = 10 / 0<br> # Attempts to execute "try" block
 except:
-    print("error") # if error is raised: execute
+    print("error")<br> # if error is raised: execute this
   </code></pre>
 
   <p>Type of error to "catch" can also be specified</p>
