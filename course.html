@@ -51,12 +51,16 @@
   <pre><code>x = 10  # int</code></pre>
 
   <h2>2. Lists</h2>
-  <p>Multiple ordered values.</p>
+  <p>Stores multiple ordered values in 1 variable.</p>
 
   <pre><code>numbers = [1, 2, 3]</code></pre>
 
+  <p>Data can be accessed using splicing.<br><em>Be careful: Indexing starts at 0</em></p>
+
+  <pre><code>number1[0] # returns 1</code></pre>
+
   <h2>3. Dictionaries</h2>
-  <p>Key–value data. Data can be accessed from keys & vice-versa</p>
+  <p>Key–value data. Data can be accessed from keys & vice-versa.</p>
 
   <pre><code>user = {"name": "Alex"}</code></pre>
 
@@ -66,7 +70,18 @@
   <pre><code>point = (10, 20)</code></pre>
 
   <h2>5. Conditionals</h2>
-  <p>Boolean logic.</p>
+  <p>Self-Explanatory</p>
+  <ul>
+    <li>a > b # a greater than b</li>
+    <li>< # less than</li>
+    <li>>= # greater than or equal to</li>
+    <li><= # less than or equal to</li>
+    <li>== # equal to</li>
+    <li>!= # not equal to</li>
+    <li>is # same object</li>
+    <li>is not # not the same object</li>
+    <li>in # contained in</li>
+  </ul>
 
   <pre><code>if x > 5:
     print("large")</code></pre>
@@ -96,7 +111,7 @@
     <li><code>print() #Display data</code></li>
     <li><code>len() #Return length of data</code></li>
     <li><code>type()</code></li>
-    <li><code>range()</code></li>
+    <li><code>find() #Returns position fo value in a list</code></li>
   </ul>
 
   <pre><code>length = len(numbers)</code></pre>
@@ -107,12 +122,13 @@
   <pre><code>try:
     x = 10 / 0
 except ZeroDivisionError:
-    print("error")</code></pre>
+    print("error") # Attempts to execute "try" block, if error is raised (in this case ZeroDivision): execute "except" block.</code></pre>
 
   <h2>10. Imports</h2>
-  <p>External modules.</p>
+  <p>Additional function from external modules.</p>
 
   <pre><code>import math</code></pre>
+  <pre><code>print(math.sqrt(9))</code></pre>
 
 </body>
 </html>
