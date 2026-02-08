@@ -102,13 +102,22 @@
   <p>Repeated execution.</p>
 
   <ul>
-    <li><code>for i in range(n)</code></li>
-    <li><code>for item in iterable</code></li>
-    <li><code>while condition</code></li>
+    <li><code>for i in range(n) # Repeats from 0 to n (end-exclusive)</code></li>
+    <li><code>for item in iterable # (e.g. list)<br>Item can be called whatever</code></li>
+    <li><code>while condition # Executes while condition is True</code></li>
   </ul>
 
   <pre><code>for i in range(5):
+  print(i)
+
+Prints: 0 1 2 3 4 (each on new line)</code></pre>
+  
+  <pre><code>for i in [1,2,3]:
     print(i)</code></pre>
+  <pre><code>number = 0
+  while number < 5:
+    print(number)
+    number += 1</code></pre>
 
   <h2>7. Functions</h2>
   <p>Reusable code blocks.</p>
