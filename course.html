@@ -132,9 +132,13 @@
   <p>Handle failure.</p>
 
   <pre><code>try:
-    x = 10 / 0
-except ZeroDivisionError:
-    print("error") # Attempts to execute "try" block, if error is raised (in this case ZeroDivision): execute "except" block.</code></pre>
+    x = 10 / 0 # Attempts to execute "try" block
+except:
+    print("error") # if error is raised: execute
+  </code></pre>
+
+  <p>Type of error to "catch" can also be specified</p>
+  <pre><code>except ZeroDivisionError:</code></pre>
 
   <h2>10. Imports</h2>
   <p>Additional function from external modules.</p>
